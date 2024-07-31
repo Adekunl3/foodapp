@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const WhatsappIcon = () => {
-  const whatsappLink = "https://wa.me/08037963323"; // Replace with your phone number
+  const whatsappLink = "https://wa.me/+2347030785345"; // Replace with your phone number
 
   return (
     <a
