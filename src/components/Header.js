@@ -26,7 +26,7 @@ const Header = ({ setIsModalOpen }) => {
       <nav className="hidden space-x-4 md:flex">
         <a href="/" className="block px-4 py-2 text-xl font-semibold hover:underline hover:text-red-600">HOME</a>
         <a href="/Menu" className="block px-4 py-2 text-lg hover:text-red-500">menu</a>
-        <a href="/Location" className="block px-4 py-2 text-lg hover:text-red-500">location</a>
+        <a href="/location" className="block px-4 py-2 text-lg hover:text-red-500">location</a>
         <button className="block px-4 py-2 text-lg hover:text-red-500" onClick={() => setIsModalOpen(true)}>contact us</button>
       </nav>
       <div className="hidden space-x-4 md:block">
@@ -47,9 +47,9 @@ const Header = ({ setIsModalOpen }) => {
           </svg>
         </button>
         <div className="flex flex-col items-center justify-center h-full space-y-4">
-          <a href="#" onClick={closeMenu} className="block px-4 py-2 text-2xl transition-transform duration-300 ease-in-out transform hover:scale-105">home</a>
-          <a href="#" onClick={closeMenu} className="block px-4 py-2 text-2xl transition-transform duration-300 ease-in-out transform hover:scale-105">menu</a>
-          <a href="#" onClick={closeMenu} className="block px-4 py-2 text-2xl transition-transform duration-300 ease-in-out transform hover:scale-105">blog</a>
+          <a href="/" onClick={closeMenu} className="block px-4 py-2 text-2xl transition-transform duration-300 ease-in-out transform hover:scale-105">home</a>
+          <a href="/Menu" onClick={closeMenu} className="block px-4 py-2 text-2xl transition-transform duration-300 ease-in-out transform hover:scale-105">menu</a>
+          <a href="/location" onClick={closeMenu} className="block px-4 py-2 text-2xl transition-transform duration-300 ease-in-out transform hover:scale-105">location</a>
           <button onClick={() => { setIsModalOpen(true); closeMenu(); }} className="block px-4 py-2 text-2xl transition-transform duration-300 ease-in-out transform hover:scale-105">contact us</button>
         </div>
       </div>
