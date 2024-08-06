@@ -12,7 +12,7 @@ const center = {
   lng: -97.1384  // Longitude for Manitoba, CA
 };
 
-const MapComponent = () => {
+const Location = () => {
   return (
     <LoadScript
       googleMapsApiKey="AIzaSyAGF6gqTYlO3OKWI-Zw43_uS8QyhYxCS28" // Your Google Maps API key
@@ -32,4 +32,4 @@ const MapComponent = () => {
   );
 };
 
-export default MapComponent;
+export default Location;

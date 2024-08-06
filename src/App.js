@@ -1,13 +1,14 @@
 // src/App.js
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import ContactModal from './components/ContactModal';
-import PopularDishes from './components/PopularDishes';
-import Menu from './components/Menu';
-import WhatsappIcon from './components/WhatsappIcon';
-import StoreLocation from './pages/store-location'; // Import the StoreLocation component
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import PopularDishes from "./components/PopularDishes";
+import Menu from "./components/Menu";
+import WhatsappIcon from "./components/WhatsappIcon";
+import ContactModal from "./components/ContactModal";
+import MapComponent from "./components/Location";
+import "./components/ContactModal.css"; // Import the CSS for animations
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,9 +20,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/menu" element={<Menu />} />
-          <Route path="/location" element={<StoreLocation />} /> {/* Add the route for the location page */}
+          <Route path="/store-location" element={<MapComponent />} />
         </Routes>
-        <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+        <ContactModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        />
         <PopularDishes />
         <WhatsappIcon />
       </div>

@@ -1,6 +1,6 @@
 // src/pages/store-location.js
 import React from 'react';
-import MapComponent from '../components/MapComponent';
+import MapComponent from '../components/Location';
 
 const StoreLocation = () => {
   return (
