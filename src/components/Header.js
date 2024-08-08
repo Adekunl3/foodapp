@@ -1,5 +1,6 @@
 // src/components/Header.js
 import React, { useState } from 'react';
+import {Link} from "react-router-dom"
 
 const Header = ({ setIsModalOpen }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +31,9 @@ const Header = ({ setIsModalOpen }) => {
         <button className="block px-4 py-2 text-lg hover:text-red-500" onClick={() => setIsModalOpen(true)}>contact us</button>
       </nav>
       <div className="hidden space-x-4 md:block">
-        <button className="text-gray-700">sign in</button>
+      <Link to="/login">
+    <button className="text-gray-700">sign in</button>
+  </Link>
         <button className="text-gray-700">🛒</button>
       </div>
       <div

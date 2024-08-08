@@ -12,7 +12,7 @@ const ContactModal = ({ isOpen, onClose }) => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_m7r43hf', 'template_xm565rj', form.current, 'FapqSYZdC4mVrP9DJ')
+      .sendForm('service_m7r43hf', 'template_xm565rj', form.current, 'kfagjT0HnfErlVYgM')
       .then(
         () => {
           setShowSuccessMessage(true);

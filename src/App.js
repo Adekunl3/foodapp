@@ -9,6 +9,7 @@ import WhatsappIcon from "./components/WhatsappIcon";
 import ContactModal from "./components/ContactModal";
 import MapComponent from "./components/Location";
 import "./components/ContactModal.css"; // Import the CSS for animations
+import Login from "./components/Login";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,12 +22,14 @@ function App() {
           <Route path="/" element={<Hero />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/store-location" element={<MapComponent />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <ContactModal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
         />
         <PopularDishes />
+
         <WhatsappIcon />
       </div>
     </Router>
