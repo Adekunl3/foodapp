@@ -8,8 +8,8 @@ import Menu from "./components/Menu";
 import WhatsappIcon from "./components/WhatsappIcon";
 import ContactModal from "./components/ContactModal";
 import MapComponent from "./components/Location";
-import "./components/ContactModal.css"; // Import the CSS for animations
-import Login from "./components/Login";
+import Login from "./components/Login"; 
+import Signup from "./components/Signup"; // Import Signup component
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,13 +23,13 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/store-location" element={<MapComponent />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} /> {/* Add Signup route */}
         </Routes>
         <ContactModal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
         />
         <PopularDishes />
-
         <WhatsappIcon />
       </div>
     </Router>
